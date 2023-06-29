@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./electricity.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="bill-generator">
+            <label for="" class="heading">Enter the number of units consumed</label>
+            <input type="number" id="input">
+            <input type="submit" value="Submit" onclick="billvalue()">
+        </div>
+        <div class="billvalue hide" id="printarea">
+            <div id="consumedunits" style="text-align: center;"></div>
+
+            <table id="table">
+                <thead>
+                    <td>Range</td>
+                    <td>Units</td>
+                    <td>Cost</td>
+                    <td>Total</td>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+            <div id="fixedvalue"  style="text-align: center;"></div>
+            <div id="totalbillvalue"  style="text-align: center;"></div>
+
+        </div>
+        <button class="hide" id="print" onclick="printPageArea('printarea')" style="text-align: center;" >Print</button>
+        
+    </div>
+    <script src="./electricity.js"></script>
+</body>
+
+</html>
